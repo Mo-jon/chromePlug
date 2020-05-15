@@ -6,6 +6,7 @@ This is a plug-in of chrome,  It's just an infrastructure for development.
 一切从 manifest.json 配置文件开始
 
 {
+
   "name": "mojon", // 插件名
   
   "description": "Chrome Extension of mojon", // 插件描述
@@ -16,22 +17,22 @@ This is a plug-in of chrome,  It's just an infrastructure for development.
   
   // 插件开发文件 -----------------------------
   
-  "browser_action": 
-  {
+  "browser_action": {
+  
     "default_popup": "index.html", // html开发文件
     "default_icon": "favicon.ico"  // 插件图标
   },
   
-  "background": 
-  {
+  "background": {
+  
     "scripts": ["background.js"],  // JavaScript开发文件
     "persistent": false
   },
   
   // 获取权限 ----------------------------------
   
-  "permissions": 
-  [
+  "permissions": [
+  
     "activeTab",
     "declarativeContent",
     "storage"
@@ -41,6 +42,7 @@ This is a plug-in of chrome,  It's just an infrastructure for development.
   
   "content_scripts": [
     {
+    
       "matches": ["https://www.bilibili.com/*"], // 注入域名列表 * 
       "css": ["contentCss.css"], // 注入样式
       "js": ["contentScript.js"] // 注入JavaScript
