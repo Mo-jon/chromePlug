@@ -8,11 +8,8 @@ This is a plug-in of chrome,  It's just an infrastructure for development.
 {
 
   "name": "mojon", // 插件名
-  
   "description": "Chrome Extension of mojon", // 插件描述
-  
   "version": "1.0",  // 插件版本
-  
   "manifest_version": 2, // 清单版本
   
   // 插件开发文件 -----------------------------
@@ -40,10 +37,12 @@ This is a plug-in of chrome,  It's just an infrastructure for development.
   
   // 插件注入文件--------------------------------
   
-  "content_scripts": [{
-    
+  "content_scripts": [
+  
+    {
       "matches": ["https://www.bilibili.com/*"], // 注入域名列表 * 
       "css": ["contentCss.css"], // 注入样式
       "js": ["contentScript.js"] // 注入JavaScript
-    }]
+    }
+  ]
 }
