@@ -43,7 +43,6 @@ This is a plug-in of chrome,  It's just an infrastructure for development.
       "matches": ["https://www.bilibili.com/*"], // 注入域名列表 * 
       "css": ["contentCss.css"], // 注入样式
       "js": ["contentScript.js"] // 注入JavaScript
-    }
-  ]
-  
+     }
+   ]
 }
