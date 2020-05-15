@@ -8,8 +8,11 @@ This is a plug-in of chrome,  It's just an infrastructure for development.
 {
 
   "name": "mojon", // 插件名
+  
   "description": "Chrome Extension of mojon", // 插件描述
+  
   "version": "1.0",  // 插件版本
+  
   "manifest_version": 2, // 清单版本
   
   // 插件开发文件 -----------------------------
